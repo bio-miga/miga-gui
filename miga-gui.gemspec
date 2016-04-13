@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = ">= 1.9"
 
   # Docs + tests
+  s.add_development_dependency "bundler", "~> 1.10"
   s.add_development_dependency "rake", "~> 11"
   s.add_development_dependency "test-unit", "~> 3"
 
