@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   # Dependencies
   s.add_runtime_dependency "shoes", "4.0.0.pre5"
   s.add_runtime_dependency "miga-base", MiGA_GUI::MIGA_VERSION
-  s.required_ruby_version = "~> 2.0"
+  s.required_ruby_version = ">= 1.9"
 
   # Docs + tests
   s.add_development_dependency "rake", "~> 11"

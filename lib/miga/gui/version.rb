@@ -6,7 +6,7 @@ module MiGA_GUI
   
   ##
   # GUI Version
-  VERSION = "0.2.0.8"
+  VERSION = "0.2.0.9"
 
   ##
   # Release date of the current GUI version
