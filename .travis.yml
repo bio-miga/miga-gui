@@ -1,0 +1,20 @@
+language: ruby
+rvm:
+  - jruby-9.0.5.0
+  - jruby-1.7.24
+jdk:
+  - openjdk7
+  - oraclejdk8
+env: JRUBY_OPTS="-d"
+before_script:
+  - "export DISPLAY=:99.0"
+  - "export SWT_GTK3=0"
+  - "sh -e /etc/init.d/xvfb start"
+  - "sleep 3"
+script: "bundle exec rake test:all"
+after_script:
+  - find -name '*.log' -exec cat {} \;
+cache: bundler
+#addons:
+#  code_climate:
+#    repo_token: ae74feb57032eaec34d8b695e504f00fe300d01a2ec0055e41f107a20f512645
