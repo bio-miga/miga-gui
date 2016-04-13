@@ -60,7 +60,7 @@ class MiGA::GUI < Shoes
   ##
   # Project window.
   def project
-    header("» " + $project.name.unmiga_name)
+    header("\xC2\xBB " + $project.name.unmiga_name)
     stack(margin:40) do
       menu_bar [:list_datasets, :new_dataset, :progress_report, :help]
       stack(margin_top:10) do
@@ -77,7 +77,7 @@ class MiGA::GUI < Shoes
   ##
   # Datasets list window.
   def datasets
-    header("» " + $project.name.unmiga_name)
+    header("\xC2\xBB " + $project.name.unmiga_name)
     stack(margin:40) do
       para "#{$project.metadata[:datasets].size} datasets:"
       para ""
@@ -95,7 +95,8 @@ class MiGA::GUI < Shoes
   ##
   # Dataset details window.
   def dataset(name)
-    header("» " + $project.name.unmiga_name + " » " + name.unmiga_name)
+    header("\xC2\xBB " + $project.name.unmiga_name +
+      " \xC2\xBB " + name.unmiga_name)
     stack(margin:40) do
       ds = $project.dataset(name)
       stack do
@@ -123,7 +124,7 @@ class MiGA::GUI < Shoes
   ##
   # Project report window.
   def report
-    header("» " + $project.name.unmiga_name)
+    header("\xC2\xBB " + $project.name.unmiga_name)
     stack(margin:40) do
       $done_para = subtitle "Dataset tasks advance: "
       $done = 0.0
