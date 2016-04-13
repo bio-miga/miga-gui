@@ -15,6 +15,6 @@ script: "bundle exec rake test:all"
 after_script:
   - find -name '*.log' -exec cat {} \;
 cache: bundler
-#addons:
-#  code_climate:
-#    repo_token: ae74feb57032eaec34d8b695e504f00fe300d01a2ec0055e41f107a20f512645
+addons:
+  code_climate:
+    repo_token: a7dc9fd6dc69b7ba0ad974b67a49df6c7df15fb6e08f712b4a9f148c67c1180c
