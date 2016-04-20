@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
     "../lib/**/*.rb", "../test/**/*.rb", "img/*", "bin/*",
     "Gemfile", "../Rakefile", "../README.md", "../LICENSE"
   ]
-  s.executables	<< "miga"
+  s.executables	<< "miga-gui"
   
   # Dependencies
   s.add_runtime_dependency "shoes", "4.0.0.pre5"

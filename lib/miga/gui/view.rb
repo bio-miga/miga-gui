@@ -90,7 +90,8 @@ class MiGA::GUI::View < Shoes
         c.project.metadata[:datasets].each do |name|
           stack(width:160, margin:2) do
 	    background miga_blue(0.25)
-            para link(name.unmiga_name){ c.show_dataset(name) }, margin:5
+            para link(name.unmiga_name){ c.show_dataset(name) },
+              margin:5, align: "center"
           end
         end
       end
