@@ -3,6 +3,11 @@
 [![Build Status](https://travis-ci.org/bio-miga/miga-gui.svg?branch=master)](https://travis-ci.org/bio-miga/miga-gui)
 [![Inch docs](http://inch-ci.org/github/bio-miga/miga-gui.svg)](http://inch-ci.org/github/bio-miga/miga-gui)
 
+# PROJECT ABANDONED
+
+**The MiGA GUI has been abandoned in favor of [MiGA Web][miga-web]. Starting with MiGA v0.2.5 a new native-C dependency (sqlite3)
+makes it impossible to continue supporting JRuby.**
+
 
 # Graphical User Interface for MiGA
 
